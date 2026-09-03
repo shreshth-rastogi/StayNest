@@ -1,0 +1,94 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+
+        <h3 class="mb-4">
+            Create your Account
+        </h3>
+
+
+        <form
+            action="/user/signup"
+            method="POST"
+            class="needs-validation"
+            novalidate
+        >
+
+            <!-- Username -->
+            <div class="mb-3">
+
+                <label for="username" class="form-label">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Enter username"
+                    class="form-control"
+                    id="username"
+                    required
+                >
+
+                <div class="invalid-feedback">
+                    Please enter a username.
+                </div>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="mb-3">
+
+                <label for="email" class="form-label">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter email"
+                    class="form-control"
+                    id="email"
+                    required
+                >
+
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+
+            </div>
+
+
+            <!-- Password -->
+            <div class="mb-3">
+
+                <label for="password" class="form-label">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                    class="form-control"
+                    id="password"
+                    required
+                >
+
+                <div class="invalid-feedback">
+                    Please enter a password.
+                </div>
+
+            </div>
+
+
+            <button class="btn btn-dark add-btn mt-3">
+                Add Account
+            </button>
+
+        </form>
+
+    </div>
+</div>

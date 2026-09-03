@@ -1,0 +1,133 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<!-- Listing Categories -->
+
+<div class="category-bar">
+
+    <a href="/listings" class="category-item">
+        <i class="fa-solid fa-house"></i>
+        <span>All</span>
+    </a>
+
+    <a href="/listings?category=Farms" class="category-item">
+        <i class="fa-solid fa-tractor"></i>
+        <span>Farms</span>
+    </a>
+
+    <a href="/listings?category=Rooms" class="category-item">
+        <i class="fa-solid fa-bed"></i>
+        <span>Rooms</span>
+    </a>
+
+    <a href="/listings?category=Amazing%20Views" class="category-item">
+        <i class="fa-solid fa-mountain-sun"></i>
+        <span>Amazing views</span>
+    </a>
+
+    <a href="/listings?category=Iconic%20Cities" class="category-item">
+        <i class="fa-solid fa-city"></i>
+        <span>Iconic cities</span>
+    </a>
+
+    <a href="/listings?category=Surfing" class="category-item">
+        <i class="fa-solid fa-water"></i>
+        <span>Surfing</span>
+    </a>
+
+    <a href="/listings?category=Amazing%20Pools" class="category-item">
+        <i class="fa-solid fa-person-swimming"></i>
+        <span>Amazing pools</span>
+    </a>
+
+    <a href="/listings?category=Beach" class="category-item">
+        <i class="fa-solid fa-umbrella-beach"></i>
+        <span>Beach</span>
+    </a>
+
+    <a href="/listings?category=Cabins" class="category-item">
+        <i class="fa-solid fa-house-chimney"></i>
+        <span>Cabins</span>
+    </a>
+
+    <a href="/listings?category=Lakefront" class="category-item">
+        <i class="fa-solid fa-water"></i>
+        <span>Lakefront</span>
+    </a>
+
+    <a href="/listings?category=Mountain" class="category-item">
+        <i class="fa-solid fa-mountain"></i>
+        <span>Mountains</span>
+    </a>
+
+    <a href="/listings?category=Historic" class="category-item">
+        <i class="fa-solid fa-landmark"></i>
+        <span>Historic</span>
+    </a>
+
+</div>
+
+
+<% if (results.length === 0) { %>
+
+    <div class="no-listings text-center">
+
+        <div class="mb-4">
+            <i class="fa-solid fa-house no-listings-icon"></i>
+        </div>
+
+        <h2>No Listings Found</h2>
+
+        <p class="text-muted">
+            No Listings match the selected category.
+        </p>
+
+        <a href="/listings" class="btn add-btn px-4">
+            View All Listings
+        </a>
+
+    </div>
+
+<% } else { %>
+
+
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 mt-4">
+
+        <% for (let i = 0; i < results.length; i++) { %>
+
+            <a href="/listings/<%= results[i]._id %>">
+
+                <div class="card">
+
+                    <img
+                        src="<%= results[i].image.url %>"
+                        class="card-img-top"
+                        alt="Listing image"
+                    >
+
+                    <div class="card-img-overlay"></div>
+
+                    <div class="card-body">
+
+                        <p class="card-text">
+
+                            <b><%= results[i].title %></b>
+
+                            <br>
+
+                            &#8377;
+                            <%= results[i].price.toLocaleString("en-IN") %>/night
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        <% } %>
+
+    </div>
+
+
+<% } %>

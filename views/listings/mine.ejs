@@ -1,0 +1,116 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+
+        <% if (results.length === 0) { %>
+
+            <!-- No Listings -->
+            <div class="no-listings text-center">
+
+                <div class="mb-4">
+                    <i class="fa-solid fa-house no-listings-icon"></i>
+                </div>
+
+                <h2 class="mb-3">
+                    No Listings Yet
+                </h2>
+
+                <p class="text-muted mb-4">
+                    You haven't created any listings yet.
+                </p>
+
+                <a href="/listings/new" class="btn add-btn px-4">
+                    <i class="fa-solid fa-plus me-2"></i>
+                    Create Listing
+                </a>
+
+            </div>
+
+        <% } else { %>
+
+            <!-- My Listings -->
+            <h3 class="mb-4">
+                My Listings
+            </h3>
+
+            <div class="row">
+
+                <% for (let result of results) { %>
+
+                    <div class="col-md-6 my-listing-column">
+
+                        <div class="card my-listing-card">
+
+                            <a href="/listings/<%= result._id %>">
+
+                                <img
+                                    src="<%= result.image.url %>"
+                                    class="card-img-top"
+                                    alt="Listing image"
+                                >
+
+                            </a>
+
+                            <div class="card-body">
+
+                                <p class="card-text">
+
+                                    <b>
+                                        <%= result.title %>
+                                    </b>
+
+                                    <br>
+
+                                    &#8377;
+                                    <%= result.price.toLocaleString("en-IN") %>
+                                    / night
+
+                                    <br>
+
+                                    <%= result.location %>,
+                                    <%= result.country %>
+
+                                </p>
+
+
+                                <!-- Edit + Delete -->
+                                <div class="listing-actions">
+
+                                    <a
+                                        href="/listings/<%= result._id %>/edit"
+                                        class="btn edit-listing-btn"
+                                    >
+                                        Edit
+                                    </a>
+
+
+                                    <form
+                                        action="/listings/<%= result._id %>?_method=DELETE"
+                                        method="POST"
+                                    >
+
+                                        <button
+                                            class="btn delete-listing-btn"
+                                        >
+                                            Delete
+                                        </button>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                <% } %>
+
+            </div>
+
+        <% } %>
+
+    </div>
+</div>
