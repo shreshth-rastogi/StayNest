@@ -560,32 +560,16 @@ body {
 
 @media (max-width: 991.98px) {
 
-    /* Never force navbar to a fixed height */
+    /* Never force the navbar to a fixed height */
     .navbar {
         height: auto;
         min-height: 5rem;
     }
 
-    /* Keep collapsed navbar completely white */
+    /* Keep the navbar background clean */
     .navbar-collapse {
         background-color: white;
         width: 100%;
-        padding: 0.75rem 0 1rem;
-    }
-
-    /* Search takes full available width */
-    .search-form {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .search-bar {
-        width: 100%;
-    }
-
-    /* Navbar links have proper spacing */
-    .navbar-nav .nav-link {
-        padding: 0.7rem 0;
     }
 
     /* Prevent content from touching screen edges */
@@ -609,7 +593,10 @@ body {
 
 @media (max-width: 767.98px) {
 
-    /* Navbar */
+    /* =========================
+       Navbar
+       ========================= */
+
     .navbar {
         height: auto;
         min-height: 5rem;
@@ -617,7 +604,8 @@ body {
 
     .navbar-collapse {
         background-color: white;
-        padding: 0.75rem 0 1.25rem;
+        width: 100%;
+        padding: 0.25rem 0 0.75rem;
     }
 
     .navbar-nav {
@@ -626,14 +614,18 @@ body {
 
     .navbar-nav .nav-link {
         font-size: 1rem;
-        padding: 0.65rem 0;
+        padding: 0.4rem 0 !important;
+        margin: 0 !important;
     }
 
 
-    /* Search */
+    /* =========================
+       Search
+       ========================= */
+
     .search-form {
         width: 100%;
-        margin: 0.75rem 0;
+        margin: 0.5rem 0 0.75rem !important;
     }
 
     .search-bar {
@@ -642,8 +634,9 @@ body {
     }
 
     .search-input {
-        font-size: 0.95rem;
         min-width: 0;
+        font-size: 0.95rem;
+        padding: 0 1rem;
     }
 
     .search-btn {
@@ -653,7 +646,10 @@ body {
     }
 
 
-    /* Main container */
+    /* =========================
+       Main container
+       ========================= */
+
     .container {
         width: 100%;
         max-width: 100%;
@@ -663,7 +659,10 @@ body {
     }
 
 
-    /* Listing cards */
+    /* =========================
+       Listing cards
+       ========================= */
+
     .card {
         margin-bottom: 1.75rem !important;
     }
@@ -674,7 +673,10 @@ body {
     }
 
 
-    /* My Listings */
+    /* =========================
+       My Listings
+       ========================= */
+
     .my-listing-column {
         padding-left: 0.25rem;
         padding-right: 0.25rem;
@@ -689,7 +691,10 @@ body {
     }
 
 
-    /* View page */
+    /* =========================
+       View page
+       ========================= */
+
     .show-card .card-body {
         padding: 1.25rem 0.5rem 0.5rem 0.5rem !important;
     }
@@ -716,7 +721,10 @@ body {
     }
 
 
-    /* Review section */
+    /* =========================
+       Review section
+       ========================= */
+
     .review-form-section {
         margin-top: 3rem;
     }
@@ -726,7 +734,10 @@ body {
     }
 
 
-    /* Edit image */
+    /* =========================
+       Edit image
+       ========================= */
+
     .edit-listing-image {
         width: 100%;
         max-width: 300px;
@@ -734,13 +745,19 @@ body {
     }
 
 
-    /* Listing action buttons */
+    /* =========================
+       Listing action buttons
+       ========================= */
+
     .listing-actions {
         flex-wrap: wrap;
     }
 
 
-    /* Categories */
+    /* =========================
+       Categories
+       ========================= */
+
     .category-bar {
         gap: 1.25rem;
         padding: 1rem 0 0.75rem;
@@ -755,7 +772,10 @@ body {
     }
 
 
-    /* Footer */
+    /* =========================
+       Footer
+       ========================= */
+
     .f-info {
         min-height: 8rem;
         height: auto;
@@ -781,6 +801,18 @@ body {
 
     .navbar {
         min-height: 4.5rem;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.35rem 0 !important;
+    }
+
+    .search-form {
+        margin: 0.4rem 0 0.6rem !important;
     }
 
     .fa-compass {
@@ -821,4 +853,4 @@ body {
         font-size: 1.15rem;
     }
 
-}
+} 
