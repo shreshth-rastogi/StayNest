@@ -1,449 +1,446 @@
-body { 
-    font-family: "Plus Jakarta Sans", sans-serif !important; 
-    display: flex !important; 
-    flex-direction: column !important; 
-    min-height: 100vh !important; 
-} 
- 
-.container { 
-    flex: 1 !important; 
-    padding-bottom: 3rem !important; 
-} 
- 
- 
-/* Navbar */ 
- 
-.navbar { 
-    height: 5rem; 
-    background-color: white; 
-} 
- 
-.fa-compass { 
-    color: #fe424d; 
-    font-size: 2rem; 
-} 
- 
-.nav-link { 
-    color: #222222 !important; 
-    font-size: 1.1rem; 
-    font-weight: 500; 
-} 
- 
- 
-/* Footer */ 
- 
-.f-info { 
-    height: 8rem; 
-    background-color: #ebebeb; 
- 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
- 
-    gap: 1rem; 
-} 
- 
-.f-info-socials { 
-    display: flex; 
-    gap: 1rem; 
-} 
- 
-.f-info-socials i { 
-    font-size: 1.3rem; 
-} 
- 
-.f-info-links { 
-    display: flex; 
-    gap: 1rem; 
-} 
- 
-.f-info-links a { 
-    text-decoration: none; 
-    color: #222; 
-} 
- 
-.f-info-links a:hover { 
-    text-decoration: underline; 
-} 
- 
- 
-/* Cards */ 
- 
-.card { 
-    border: none !important; 
-    margin-bottom: 2rem !important; 
-} 
- 
-.card-img-top { 
-    border-radius: 1rem !important; 
-    width: 100% !important; 
-    object-fit: cover !important; 
-    height: 20rem !important; 
-} 
- 
-.card-body { 
-    padding: 0 !important; 
-} 
- 
-.card-text { 
-    font-weight: 400 !important; 
-} 
- 
- 
-/* Card Effect */ 
- 
-.card-img-overlay { 
-    opacity: 0 !important; 
-    background-color: white; 
-} 
- 
-.card:hover .card-img-overlay { 
-    opacity: 0.2 !important; 
-} 
- 
-.row a { 
-    text-decoration: none !important; 
-    color: #000000 !important; 
-} 
- 
- 
-/* New page on new route */ 
- 
-.add-btn { 
-    background-color: #fe424d !important; 
-    border: none !important; 
-} 
- 
- 
-/* View page on show route */ 
- 
-.show-card .card-body { 
-    padding: 1.5rem 1rem 0.5rem 1rem !important; 
-} 
- 
- 
-/* Owner Information */ 
- 
-.owner-info { 
-    display: flex; 
-    align-items: center; 
-    gap: 8px; 
- 
-    margin-bottom: 1.5rem; 
- 
-    font-size: 0.95rem; 
-    color: #717171; 
-} 
- 
-.owner-info i { 
-    font-size: 0.9rem; 
-} 
- 
-.owner-info b { 
-    color: #222; 
-} 
- 
- 
-/* Listing Information */ 
- 
-.listing-info { 
-    margin-top: 0.5rem; 
-} 
- 
- 
-/* Listing Title */ 
- 
-.listing-title { 
-    font-size: 1.5rem; 
-    font-weight: 600; 
- 
-    margin-bottom: 0.75rem; 
- 
-    color: #222; 
-} 
- 
- 
-/* Listing Description */ 
- 
-.listing-description { 
-    font-size: 1rem; 
-    line-height: 1.7; 
- 
-    margin-bottom: 1.25rem; 
- 
-    color: #444; 
-} 
- 
- 
-/* Listing Price */ 
- 
-.listing-price { 
-    font-size: 1.1rem; 
- 
-    margin-bottom: 0.75rem; 
- 
-    color: #222; 
-} 
- 
-.listing-price b { 
-    font-size: 1.2rem; 
-    font-weight: 700; 
-} 
- 
-.listing-price span { 
-    font-weight: 400; 
-    color: #555; 
-} 
- 
- 
-/* Listing Location */ 
- 
-.listing-location { 
-    display: flex; 
-    align-items: center; 
-    gap: 7px; 
- 
-    font-size: 0.95rem; 
- 
-    margin-bottom: 0; 
- 
-    color: #717171; 
-} 
- 
-.listing-location i { 
-    font-size: 0.85rem; 
-} 
- 
- 
-/* Review Form */ 
- 
-.review-form-section { 
-    margin-top: 4rem; 
-} 
- 
- 
-/* Review Cards */ 
- 
-.review-card { 
-    border: 1px solid #dee2e6 !important; 
-    border-radius: 0.75rem !important; 
-} 
- 
-.review-card-body { 
-    padding: 1.25rem !important; 
-} 
- 
- 
-/* Review Author */ 
- 
-.review-author { 
-    display: flex; 
-    align-items: center; 
-    gap: 8px; 
- 
-    margin-bottom: 10px; 
- 
-    font-size: 1rem; 
-} 
- 
-.review-author i { 
-    font-size: 0.9rem; 
-    color: #717171; 
-} 
- 
-.review-author b { 
-    color: #222; 
-} 
- 
- 
-/* Review Rating */ 
- 
-.review-rating { 
-    font-size: 0.9rem; 
-    color: #717171; 
- 
-    margin-bottom: 12px; 
-} 
- 
-.review-rating b { 
-    color: #222; 
-} 
- 
- 
-/* Review Comment */ 
- 
-.review-comment { 
-    margin-bottom: 1rem !important; 
-    line-height: 1.6; 
-} 
- 
- 
-/* Edit Listing */ 
- 
-.edit-listing-image { 
-    width: 300px; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 1rem; 
-    margin-bottom: 1rem; 
-} 
- 
- 
-/* Edit Page */ 
- 
-.edit-page-title { 
-    margin-bottom: 2rem; 
-} 
- 
- 
-/* Edit Button */ 
- 
-.edit-btn { 
-    background-color: #fe424d !important; 
-    border: none !important; 
-    color: white !important; 
- 
-    margin-top: 0.75rem; 
-    margin-bottom: 2.5rem; 
-} 
- 
-.edit-btn:hover { 
-    background-color: #e63946 !important; 
-    color: white !important; 
-} 
- 
- 
-/* My Listings - Empty State */ 
- 
-.no-listings { 
-    min-height: 60vh; 
- 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-} 
- 
-.no-listings-icon { 
-    font-size: 5rem; 
-    color: #fe424d; 
-} 
- 
- 
-/* My Listings */ 
- 
-.my-listing-column { 
-    padding-left: 1rem; 
-    padding-right: 1rem; 
-} 
- 
-.my-listing-card { 
-    margin-bottom: 2.5rem !important; 
-} 
- 
-.my-listing-card .card-img-top { 
-    width: 100% !important; 
-    height: 20rem !important; 
-    object-fit: cover !important; 
-    border-radius: 1rem !important; 
-} 
- 
- 
-/* My Listing Buttons */ 
- 
-.listing-actions { 
-    display: flex; 
-    align-items: center; 
-    gap: 0.5rem; 
- 
-    margin-top: 0.75rem; 
-    margin-bottom: 0.5rem; 
-} 
- 
-.listing-actions form { 
-    margin: 0; 
-} 
- 
- 
-/* My Listing Edit Button */ 
- 
-.listing-actions .edit-listing-btn { 
-    background-color: #fe424d !important; 
-    border: none !important; 
-    color: white !important; 
-} 
- 
-.listing-actions .edit-listing-btn:hover { 
-    background-color: #e63946 !important; 
-    color: white !important; 
-} 
- 
- 
-/* My Listing Delete Button */ 
- 
-.listing-actions .delete-listing-btn { 
-    background-color: #222222 !important; 
-    border: none !important; 
-    color: white !important; 
-} 
- 
-.listing-actions .delete-listing-btn:hover { 
-    background-color: #000000 !important; 
-} 
- 
- 
- 
- 
- 
- 
-/* Categories */ 
- 
-.category-bar { 
-    width: 100%; 
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: space-between; 
-    gap: 2rem; 
- 
-    padding: 1.5rem 0 1rem; 
- 
-    overflow-x: auto; 
-    scrollbar-width: none; 
-} 
- 
-.category-bar::-webkit-scrollbar { 
-    display: none; 
-} 
- 
-.category-item { 
-    min-width: max-content; 
- 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 0.5rem; 
- 
-    color: #717171 !important; 
-    text-decoration: none !important; 
- 
-    font-size: 0.8rem; 
-    font-weight: 500; 
- 
-    padding-bottom: 0.7rem; 
- 
-    border-bottom: 2px solid transparent; 
- 
-    transition: 0.2s; 
-} 
- 
-.category-item i { 
-    font-size: 1.35rem; 
-} 
- 
-.category-item:hover { 
-    color: #222 !important; 
-    border-bottom: 2px solid #222; 
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+}
+
+.container {
+    flex: 1 !important;
+    padding-bottom: 3rem !important;
+}
+
+
+/* Navbar */
+
+.navbar {
+    min-height: 5rem;
+    height: auto;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* Footer */
+
+.f-info {
+    min-height: 8rem;
+    background-color: #ebebeb;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.f-info-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.f-info-socials i {
+    font-size: 1.3rem;
+}
+
+.f-info-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Cards */
+
+.card {
+    border: none !important;
+    margin-bottom: 2rem !important;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 20rem !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important;
+}
+
+
+/* Card Effect */
+
+.card-img-overlay {
+    opacity: 0 !important;
+    background-color: white;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 0.2 !important;
+}
+
+.row a {
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+
+
+/* New page on new route */
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+/* View page on show route */
+
+.show-card .card-body {
+    padding: 1.5rem 1rem 0.5rem 1rem !important;
+}
+
+
+/* Owner Information */
+
+.owner-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 0.95rem;
+    color: #717171;
+}
+
+.owner-info i {
+    font-size: 0.9rem;
+}
+
+.owner-info b {
+    color: #222;
+}
+
+
+/* Listing Information */
+
+.listing-info {
+    margin-top: 0.5rem;
+}
+
+
+/* Listing Title */
+
+.listing-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    margin-bottom: 0.75rem;
+
+    color: #222;
+}
+
+
+/* Listing Description */
+
+.listing-description {
+    font-size: 1rem;
+    line-height: 1.7;
+
+    margin-bottom: 1.25rem;
+
+    color: #444;
+}
+
+
+/* Listing Price */
+
+.listing-price {
+    font-size: 1.1rem;
+
+    margin-bottom: 0.75rem;
+
+    color: #222;
+}
+
+.listing-price b {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.listing-price span {
+    font-weight: 400;
+    color: #555;
+}
+
+
+/* Listing Location */
+
+.listing-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 0;
+
+    color: #717171;
+}
+
+.listing-location i {
+    font-size: 0.85rem;
+}
+
+
+/* Review Form */
+
+.review-form-section {
+    margin-top: 4rem;
+}
+
+
+/* Review Cards */
+
+.review-card {
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.75rem !important;
+}
+
+.review-card-body {
+    padding: 1.25rem !important;
+}
+
+
+/* Review Author */
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+}
+
+.review-author i {
+    font-size: 0.9rem;
+    color: #717171;
+}
+
+.review-author b {
+    color: #222;
+}
+
+
+/* Review Rating */
+
+.review-rating {
+    font-size: 0.9rem;
+    color: #717171;
+
+    margin-bottom: 12px;
+}
+
+.review-rating b {
+    color: #222;
+}
+
+
+/* Review Comment */
+
+.review-comment {
+    margin-bottom: 1rem !important;
+    line-height: 1.6;
+}
+
+
+/* Edit Listing */
+
+.edit-listing-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Edit Page */
+
+.edit-page-title {
+    margin-bottom: 2rem;
+}
+
+
+/* Edit Button */
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white !important;
+
+    margin-top: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.edit-btn:hover {
+    background-color: #e63946 !important;
+    color: white !important;
+}
+
+
+/* My Listings - Empty State */
+
+.no-listings {
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-listings-icon {
+    font-size: 5rem;
+    color: #fe424d;
+}
+
+
+/* My Listings */
+
+.my-listing-column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.my-listing-card {
+    margin-bottom: 2.5rem !important;
+}
+
+.my-listing-card .card-img-top {
+    width: 100% !important;
+    height: 20rem !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+}
+
+
+/* My Listing Buttons */
+
+.listing-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.listing-actions form {
+    margin: 0;
+}
+
+
+/* My Listing Edit Button */
+
+.listing-actions .edit-listing-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white !important;
+}
+
+.listing-actions .edit-listing-btn:hover {
+    background-color: #e63946 !important;
+    color: white !important;
+}
+
+
+/* My Listing Delete Button */
+
+.listing-actions .delete-listing-btn {
+    background-color: #222222 !important;
+    border: none !important;
+    color: white !important;
+}
+
+.listing-actions .delete-listing-btn:hover {
+    background-color: #000000 !important;
+}
+
+
+/* Categories */
+
+.category-bar {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 1.5rem 0 1rem;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.category-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item {
+    min-width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #717171 !important;
+    text-decoration: none !important;
+
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    padding-bottom: 0.7rem;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.2s;
+}
+
+.category-item i {
+    font-size: 1.35rem;
+}
+
+.category-item:hover {
+    color: #222 !important;
+    border-bottom: 2px solid #222;
 }
 
 
@@ -472,7 +469,6 @@ body {
 }
 
 
-
 /* Listing Category on View Page */
 
 .listing-category-display {
@@ -497,7 +493,6 @@ body {
     color: #fe424d;
     font-size: 0.85rem;
 }
-
 
 
 /* Search Bar */
@@ -553,4 +548,277 @@ body {
 
 .search-btn:hover {
     background-color: #e63946;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* Tablets */
+
+@media (max-width: 991.98px) {
+
+    /* Never force navbar to a fixed height */
+    .navbar {
+        height: auto;
+        min-height: 5rem;
+    }
+
+    /* Keep collapsed navbar completely white */
+    .navbar-collapse {
+        background-color: white;
+        width: 100%;
+        padding: 0.75rem 0 1rem;
+    }
+
+    /* Search takes full available width */
+    .search-form {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    /* Navbar links have proper spacing */
+    .navbar-nav .nav-link {
+        padding: 0.7rem 0;
+    }
+
+    /* Prevent content from touching screen edges */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Listing cards */
+    .card-img-top {
+        height: 18rem !important;
+    }
+
+    .my-listing-card .card-img-top {
+        height: 18rem !important;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 767.98px) {
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        min-height: 5rem;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 0.75rem 0 1.25rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 0.65rem 0;
+    }
+
+
+    /* Search */
+    .search-form {
+        width: 100%;
+        margin: 0.75rem 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 44px;
+    }
+
+    .search-input {
+        font-size: 0.95rem;
+        min-width: 0;
+    }
+
+    .search-btn {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+
+
+    /* Main container */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+
+    /* Listing cards */
+    .card {
+        margin-bottom: 1.75rem !important;
+    }
+
+    .card-img-top {
+        height: 18rem !important;
+        border-radius: 1rem !important;
+    }
+
+
+    /* My Listings */
+    .my-listing-column {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+
+    .my-listing-card {
+        margin-bottom: 2rem !important;
+    }
+
+    .my-listing-card .card-img-top {
+        height: 18rem !important;
+    }
+
+
+    /* View page */
+    .show-card .card-body {
+        padding: 1.25rem 0.5rem 0.5rem 0.5rem !important;
+    }
+
+    .listing-title {
+        font-size: 1.35rem;
+    }
+
+    .listing-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .listing-price {
+        font-size: 1rem;
+    }
+
+    .listing-price b {
+        font-size: 1.1rem;
+    }
+
+    .listing-location {
+        font-size: 0.9rem;
+    }
+
+
+    /* Review section */
+    .review-form-section {
+        margin-top: 3rem;
+    }
+
+    .review-card-body {
+        padding: 1rem !important;
+    }
+
+
+    /* Edit image */
+    .edit-listing-image {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+    }
+
+
+    /* Listing action buttons */
+    .listing-actions {
+        flex-wrap: wrap;
+    }
+
+
+    /* Categories */
+    .category-bar {
+        gap: 1.25rem;
+        padding: 1rem 0 0.75rem;
+    }
+
+    .category-item {
+        font-size: 0.75rem;
+    }
+
+    .category-item i {
+        font-size: 1.2rem;
+    }
+
+
+    /* Footer */
+    .f-info {
+        min-height: 8rem;
+        height: auto;
+        padding: 1.25rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .f-info-links {
+        gap: 0.75rem;
+    }
+
+}
+
+
+/* Very Small Phones */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .navbar {
+        min-height: 4.5rem;
+    }
+
+    .fa-compass {
+        font-size: 1.8rem;
+    }
+
+    .card-img-top {
+        height: 16rem !important;
+        border-radius: 0.9rem !important;
+    }
+
+    .my-listing-card .card-img-top {
+        height: 16rem !important;
+    }
+
+    .listing-title {
+        font-size: 1.25rem;
+    }
+
+    .listing-description {
+        font-size: 0.9rem;
+    }
+
+    .listing-category-display {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    .owner-info {
+        font-size: 0.9rem;
+    }
+
+    .review-form-section {
+        margin-top: 2.5rem;
+    }
+
+    .f-info-socials i {
+        font-size: 1.15rem;
+    }
+
 }
