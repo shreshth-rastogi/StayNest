@@ -72,9 +72,9 @@
         <!-- Give Review Section -->
         <% if (user && !result.owner._id.equals(user._id)) { %>
 
-            <div class="review-form-section">
+            <div class="review-form-section mt-5">
 
-                <h3 class="mb-3">
+                <h3 class="mb-4">
                     Give a Review
                 </h3>
 
@@ -205,7 +205,11 @@
                     </div>
 
 
-                    <button class="btn btn-dark add-btn">
+                    <!-- Submit Review -->
+                    <button
+                        type="submit"
+                        class="btn btn-dark add-btn mt-3 mb-0"
+                    >
                         Submit Review
                     </button>
 
@@ -217,7 +221,7 @@
 
 
         <!-- Show Reviews Section -->
-        <div class="reviews-section">
+        <div class="reviews-section mt-5">
 
             <h3 class="mb-4">
                 All Reviews
