@@ -7,6 +7,7 @@
             Listing Details
         </h3>
 
+
         <!-- Listing Card -->
         <div class="card show-card">
 
@@ -27,6 +28,7 @@
                     </span>
                 </div>
 
+
                 <!-- Listing Information -->
                 <div class="listing-info">
 
@@ -34,6 +36,7 @@
                     <h2 class="listing-title">
                         <%= result.title %>
                     </h2>
+
 
                     <!-- Category -->
                     <div class="listing-category-display">
@@ -44,10 +47,12 @@
                         </span>
                     </div>
 
+
                     <!-- Description -->
                     <p class="listing-description">
                         <%= result.description %>
                     </p>
+
 
                     <!-- Price -->
                     <p class="listing-price">
@@ -55,6 +60,7 @@
                         <b><%= result.price.toLocaleString("en-IN") %></b>
                         <span>/ night</span>
                     </p>
+
 
                     <!-- Location -->
                     <p class="listing-location">
@@ -78,6 +84,7 @@
                     Give a Review
                 </h3>
 
+
                 <form
                     action="/listings/<%= result._id %>/reviews"
                     method="POST"
@@ -94,6 +101,7 @@
                                 Rating:
                             </legend>
 
+
                             <input
                                 type="radio"
                                 id="no-rate"
@@ -103,6 +111,7 @@
                                 checked
                                 aria-label="No rating."
                             />
+
 
                             <input
                                 type="radio"
@@ -118,6 +127,7 @@
                                 1 star
                             </label>
 
+
                             <input
                                 type="radio"
                                 id="first-rate2"
@@ -131,6 +141,7 @@
                             >
                                 2 stars
                             </label>
+
 
                             <input
                                 type="radio"
@@ -146,6 +157,7 @@
                                 3 stars
                             </label>
 
+
                             <input
                                 type="radio"
                                 id="first-rate4"
@@ -159,6 +171,7 @@
                             >
                                 4 stars
                             </label>
+
 
                             <input
                                 type="radio"
@@ -189,6 +202,7 @@
                             Comments
                         </label>
 
+
                         <textarea
                             name="review[comment]"
                             class="form-control"
@@ -197,6 +211,7 @@
                             placeholder="Write your review here"
                             required
                         ></textarea>
+
 
                         <div class="invalid-feedback">
                             Please write some review.
@@ -208,7 +223,7 @@
                     <!-- Submit Review -->
                     <button
                         type="submit"
-                        class="btn btn-dark add-btn mt-3 mb-0"
+                        class="btn btn-dark add-btn mt-3 mb-5"
                     >
                         Submit Review
                     </button>
@@ -221,11 +236,12 @@
 
 
         <!-- Show Reviews Section -->
-        <div class="reviews-section mt-5">
+        <div class="reviews-section mt-0">
 
             <h3 class="mb-4">
                 All Reviews
             </h3>
+
 
             <% if (result.reviews.length > 0) { %>
 
